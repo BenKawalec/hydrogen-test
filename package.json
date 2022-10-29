@@ -14,7 +14,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "lint-ts": "tsc --noEmit",
     "test": "WATCH=true vitest",
-    "test:ci": "yarn build -t node && vitest run"
+    "test:ci": "yarn build -t node && vitest run",
+    "start": "node --enable-source-maps dist/server"
   },
   "devDependencies": {
     "@shopify/cli": "3.20.1",
